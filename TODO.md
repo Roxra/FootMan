@@ -2,7 +2,7 @@ A simple football manager game
 
 Select teams
 	Randomise team name | DONE
-	Announce teams selected to play
+	Announce teams selected to play | DONE
 
 Generate 40 players
 	Randomise player names

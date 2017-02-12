@@ -17,3 +17,4 @@ def team_picker():
         city = random.choice(CITIES_GERMAN)
 
     teamname = city + ' ' + random.choice(animals)
+    return teamname

@@ -1,6 +1,6 @@
-from teamGen.py import *
+from teamGen import *
 
 team1 = team_picker()
 team2 = team_picker()
 
-print ("Firstly, we have the", teamname ,"!")
+print ("For today's match, we have " + team1 + " facing " + team2)
