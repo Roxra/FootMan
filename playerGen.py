@@ -11,9 +11,9 @@ def player_name_gen(city):
     german_first = ['Stefan', 'Lukas', 'Niklas', 'Luis', 'Leon', 'Jonas', 'Finn', 'Max', 'Ben', 'Jakob']
     german_last = ['Schmidt', 'Schneider', 'Fischer', 'Weber', 'Meyer', 'Becker', 'Klein']
 
-    if city in CITIES_BRITISH:
+    if city in CITIES_BRITAIN:
         name = player_name_randomise(british_first, british_last)
-    elif city in CITIES_SCANDINAVIAN:
+    elif city in CITIES_SCANDINAVIA:
         name = player_name_randomise(nordic_first, nordic_last)
     elif city in CITIES_GERMAN:
         name = player_name_randomise(german_first, german_last)
