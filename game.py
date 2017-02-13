@@ -14,4 +14,4 @@ team2 = club()
 team_picker(team1)
 team_picker(team2)
 
-print ("For today's match, we have " + team1.name + " facing " + team2.name)
+print("For today's match, we have " + team1.name + " facing " + team2.name)
