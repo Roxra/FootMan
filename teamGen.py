@@ -1,7 +1,6 @@
 import random
 from lists import *
 
-
 def team_picker(fc):
     regions = ['britain', 'scandinavia', 'german']
 
