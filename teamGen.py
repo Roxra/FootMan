@@ -1,25 +1,25 @@
 import random
+from lists import *
 
-# Pool of cities to choose from, grouped by region
-CITIES_BRITAIN = ['London', 'Cardiff', 'Dublin', 'Edinburgh', 'Manchester', 'Southampton', 'Liverpool', 'Bristol', 'Leeds', 'Cambridge', 'Glasgow']
-CITIES_SCANDINAVIA = ['Copenhagen', 'Aarhus', 'Oslo' 'Bergen', 'Trondheim', 'Gothenburg', 'Malmö', 'Stockholm', 'Helsinki', 'Tampere', 'Jyväskylä', 'Reykjavík', 'Tórshavn']
-CITIES_GERMAN = ['Berlin', 'Munich', 'Hamburg', 'Dortmund', 'Essen', 'Hanover', 'Bremen', 'Düsseldorf' 'Vienna', 'Salzburg', 'Graz', 'Bern', 'Zürich', 'Basel']
-
-TEAM_MASCOTS = ['Dragons', 'Lions', 'Cats', 'Lynxes', 'Tigers', 'Sharks', 'Jaguars', 'Panthers', 'Cobras', 'Bisons', 'Alligators', 'Scorpions', 'Honey-Badgers', 'Piranhas', 'Porcupines', 'Warthogs', 'Wolves', 'Zebras', 'Spiders', 'Vipers', 'Eagles', 'Gorillas']
 
 def team_picker(fc):
     regions = ['britain', 'scandinavia', 'german']
 
-    # Choose random team region, and assign mascot
+    # Choose random team region
     fc.city = random.choice(regions)
-    fc.mascot = random.choice(TEAM_MASCOTS)
 
     # Select a random city, from the region selected
     if fc.city == 'britain':
-        fc.city = random.choice(CITIES_BRITAIN)
+        fc.name = rand_list_append(CITIES_BRITAIN, fc)
     elif fc.city == 'scandinavia':
-        fc.city = random.choice(CITIES_SCANDINAVIA)
+        fc.name = rand_list_append(CITIES_SCANDINAVIA, fc)
     else:
-        fc.city = random.choice(CITIES_GERMAN)
+        fc.name = rand_list_append(CITIES_GERMAN, fc)
 
-    fc.name = fc.city + ' ' + fc.mascot
+def rand_list_append(region, fc):
+    # Select a random mascot and city from
+    # the previously selected region
+    fc.mascot = random.choice(TEAM_MASCOTS)
+    fc.city = random.choice(region)
+
+    return(fc.city + ' ' + fc.mascot)
