@@ -30,9 +30,9 @@ def player_name_gen(club, p):
         p.name = two_list_rand(german_first, german_last)
 
 def player_stats_gen(p):
-    p.strength = np.random.normal(STAT_DEFAULT, STAT_VARIANCE)
     p.height = round(np.random.normal(HEIGHT_DEFAULT, HEIGHT_VARIANCE))
     p.weight = player_weight_gen(p)
+    p.strength = p.height * p.weight * numpy.random.normal(STAT_DEFAULT, STAT_VARIANCE)
 
 def two_list_rand(first, last):
     return random.choice(first) + ' ' + random.choice(last)
@@ -41,6 +41,6 @@ def player_weight_gen(p):
     # Generate random BMI
     bmi = np.random.normal(BMI_DEFAULT, BMI_VARIANCE)
 
-    # Convert weight to M for calculation, and use BMI converting formula
-    weight = bmi * (p.height / 100) ** 2
-    return weight
+    # Convert height to M for calculation, and use BMI converting formula
+    return (bmi * (p.height / 100) ** 2)
+
