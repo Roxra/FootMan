@@ -10,6 +10,7 @@ BMI_VARIANCE = 2
 STAT_DEFAULT = 19
 STAT_VARIANCE = 6
 STAT_INIT = 0
+ID_NUMBER = 1
 
 class player:
     def __init__(self, name):
@@ -20,6 +21,7 @@ class player:
         self.strength = STAT_INIT
         self.defence = STAT_INIT
         self.aggression = STAT_INIT
+        self.id = STAT_ID
 
 def player_name_gen(club, p):
     if club.city in CITIES_BRITAIN:
@@ -33,6 +35,8 @@ def player_stats_gen(p):
     p.height = round(np.random.normal(HEIGHT_DEFAULT, HEIGHT_VARIANCE))
     p.weight = player_weight_gen(p)
     p.strength = p.height * p.weight * numpy.random.normal(STAT_DEFAULT, STAT_VARIANCE)
+    p.id = ID_NUMBER
+    ID_NUMBER += 1
 
 def two_list_rand(first, last):
     return random.choice(first) + ' ' + random.choice(last)
@@ -43,4 +47,3 @@ def player_weight_gen(p):
 
     # Convert height to M for calculation, and use BMI converting formula
     return (bmi * (p.height / 100) ** 2)
-
