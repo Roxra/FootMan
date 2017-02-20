@@ -17,6 +17,10 @@ team_picker(team1)
 team_picker(team2)
 
 print("For today's match, we have " + team1.name + " facing " + team2.name)
+print("Now, you will get to draft your players! Hang on, generating players.")
 
-# for i in range (0, 40):
-#     team1.players.append()
+BOYS = []
+
+for i in range(60):
+    peep = player()
+    player_create(peep)

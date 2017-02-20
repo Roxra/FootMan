@@ -1,5 +1,5 @@
 import random
-from lists import *
+from header import *
 
 def team_picker(fc):
     regions = ['britain', 'scandinavia', 'german']

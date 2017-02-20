@@ -15,3 +15,16 @@ CITIES_GERMAN = ['Berlin', 'Munich', 'Hamburg', 'Dortmund', 'Essen', 'Hanover', 
 
 # Pool of mascots to choose from
 TEAM_MASCOTS = ['Dragons', 'Lions', 'Cats', 'Lynxes', 'Tigers', 'Sharks', 'Jaguars', 'Panthers', 'Cobras', 'Bisons', 'Alligators', 'Scorpions', 'Honey-Badgers', 'Piranhas', 'Porcupines', 'Warthogs', 'Wolves', 'Zebras', 'Spiders', 'Vipers', 'Eagles', 'Gorillas']
+
+
+HEIGHT_DEFAULT = 180
+HEIGHT_VARIANCE = 5
+BMI_DEFAULT = 25
+BMI_VARIANCE = 2
+STAT_DEFAULT = 19
+STAT_VARIANCE = 6
+STAT_INIT = 0
+ID_NUMBER = 1
+UNDEF = 'Undefined'
+CITIES_UNION = CITIES_GERMAN + CITIES_BRITAIN + CITIES_SCANDINAVIA
+STR_RATIO = 500
