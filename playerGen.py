@@ -13,12 +13,13 @@ class player:
         self.effective_strength = STAT_INIT
         self.defence = STAT_INIT
         self.aggression = STAT_INIT
-        self.id = ID_NUMBER
+        self.id = P_NUM
 
 def player_create(p):
     # Assign random city, only if there is no currently assigned city
     if p.city == UNDEF:
         p.city = random.choice(CITIES_UNION)
+    # Send player to functions to generate appropriate name and stats
     player_name_gen(p)
     player_stats_gen(p)
 
@@ -31,12 +32,13 @@ def player_name_gen(p):
         p.name = two_list_rand(german_first, german_last)
 
 def player_stats_gen(p):
+    global P_NUM
     p.height = round(normal(HEIGHT_DEFAULT, HEIGHT_VARIANCE))
     p.weight = player_weight_gen(p)
     p.strength = normal(STAT_DEFAULT, STAT_VARIANCE)
     p.effective_strength = p.strength + (p.height * p.weight / STR_RATIO)
-    p.id = ID_NUMBER
-    ID_NUMBER += 1
+    p.id = P_NUM
+    P_NUM += 1
 
 def two_list_rand(first, last):
     return random.choice(first) + ' ' + random.choice(last)

@@ -11,7 +11,7 @@ german_last = ['Schmidt', 'Schneider', 'Fischer', 'Weber', 'Meyer', 'Becker', 'K
 # Pool of cities to choose from, grouped by region
 CITIES_BRITAIN = ['London', 'Cardiff', 'Dublin', 'Edinburgh', 'Manchester', 'Southampton', 'Liverpool', 'Bristol', 'Leeds', 'Cambridge', 'Glasgow']
 CITIES_SCANDINAVIA = ['Copenhagen', 'Aarhus', 'Oslo' 'Bergen', 'Trondheim', 'Gothenburg', 'Malmö', 'Stockholm', 'Helsinki', 'Tampere', 'Jyväskylä', 'Reykjavík', 'Tórshavn']
-CITIES_GERMAN = ['Berlin', 'Munich', 'Hamburg', 'Dortmund', 'Essen', 'Hanover', 'Bremen', 'Düsseldorf' 'Vienna', 'Salzburg', 'Graz', 'Bern', 'Zürich', 'Basel']
+CITIES_GERMAN = ['Berlin', 'Munich', 'Hamburg', 'Dortmund', 'Essen', 'Hanover', 'Bremen', 'Düsseldorf', 'Vienna', 'Salzburg', 'Graz', 'Bern', 'Zürich', 'Basel']
 
 # Pool of mascots to choose from
 TEAM_MASCOTS = ['Dragons', 'Lions', 'Cats', 'Lynxes', 'Tigers', 'Sharks', 'Jaguars', 'Panthers', 'Cobras', 'Bisons', 'Alligators', 'Scorpions', 'Honey-Badgers', 'Piranhas', 'Porcupines', 'Warthogs', 'Wolves', 'Zebras', 'Spiders', 'Vipers', 'Eagles', 'Gorillas']
@@ -20,11 +20,11 @@ TEAM_MASCOTS = ['Dragons', 'Lions', 'Cats', 'Lynxes', 'Tigers', 'Sharks', 'Jagua
 HEIGHT_DEFAULT = 180
 HEIGHT_VARIANCE = 5
 BMI_DEFAULT = 25
+UNDEF = 'Undefined'
 BMI_VARIANCE = 2
 STAT_DEFAULT = 19
 STAT_VARIANCE = 6
 STAT_INIT = 0
-ID_NUMBER = 1
-UNDEF = 'Undefined'
 CITIES_UNION = CITIES_GERMAN + CITIES_BRITAIN + CITIES_SCANDINAVIA
 STR_RATIO = 500
+P_NUM = int(1)

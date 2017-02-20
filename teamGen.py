@@ -16,8 +16,7 @@ def team_picker(fc):
         fc.name = rand_list_append(CITIES_GERMAN, fc)
 
 def rand_list_append(region, fc):
-    # Select a random mascot and city from
-    # the previously selected region
+    # Select a random mascot and city from the previously selected region
     fc.mascot = random.choice(TEAM_MASCOTS)
     fc.city = random.choice(region)
 
