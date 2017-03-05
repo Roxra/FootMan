@@ -1,12 +1,12 @@
 # Pool of first and last names, grouped by region
-british_first = ['David', 'William', 'Robert', 'Daniel', 'John', 'James', 'Micheal', 'Paul', 'Mark']
-british_last = ['Smith', 'Johnson', 'Williams', 'Browns', 'Wilson', 'Moore', 'Anderson']
+british_first = ['David', 'William', 'Robert', 'Daniel', 'John', 'James', 'Micheal', 'Paul', 'Mark', 'Dylan', 'Zachary', 'Jack', 'Ryan', 'Alan', 'Callum', 'Oliver', 'Noah', 'Leo', 'Archie']
+british_last = ['Smith', 'Johnson', 'Williams', 'Browns', 'Wilson', 'Moore', 'Anderson', 'Jones', 'Cole', 'Dean', 'Foster', 'Collins', 'Simpson', 'Roberts', 'Hughes', 'Walker', 'Hill', 'Partridge']
 
-nordic_first = ['Juni', 'Jarel', 'Hjalmar', 'Havelock', 'Hedvig', 'Osvald', 'Ulf', 'Tyw']
+nordic_first = ['Juni', 'Jarel', 'Hjalmar', 'Havelock', 'Hedvig', 'Osvald', 'Ulf', 'Tyw', 'Ake', 'Ase', 'Asmund', 'Egil', 'Frey', 'Gosta', 'Garth']
 nordic_last = ['Jensen', 'Nielsen', 'Hansen', 'Larsen', 'Lund', 'Holm', 'Vestergaard']
 
-german_first = ['Stefan', 'Lukas', 'Niklas', 'Luis', 'Leon', 'Jonas', 'Finn', 'Max', 'Ben', 'Jakob']
-german_last = ['Schmidt', 'Schneider', 'Fischer', 'Weber', 'Meyer', 'Becker', 'Klein']
+german_first = ['Stefan', 'Lukas', 'Niklas', 'Luis', 'Leon', 'Jonas', 'Finn', 'Max', 'Ben', 'Jakob', 'Ingo', 'Jan', 'Bastian']
+german_last = ['Schmidt', 'Schneider', 'Fischer', 'Weber', 'Meyer', 'Becker', 'Klein', 'Schunke', 'Scharf', 'Emig', 'Strillinger']
 
 # Pool of cities to choose from, grouped by region
 CITIES_BRITAIN = ['London', 'Cardiff', 'Dublin', 'Edinburgh', 'Manchester', 'Southampton', 'Liverpool', 'Bristol', 'Leeds', 'Cambridge', 'Glasgow']
